@@ -1,0 +1,11 @@
+flask
+flask-email
+flask_wtf
+wtforms
+flask-cors
+flask-bootstrap
+flask_sqlalchemy
+flask_testing
+pymysql
+pytest
+pytest-cov

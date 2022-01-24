@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{url_for('index')}}">
+        <img
+          id="navbar-logo"
+          src="../static/CR_Logo_Large-modified.png"
+          alt=""
+          width="40"
+          height="34"
+          class="d-inline-block align-text-center"
+        />
+        Chester Riley
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="{{url_for('profile')}}">About Me</a>
+          <a class="nav-link" href="{{url_for('skills')}}">Skills</a>
+          <a class="nav-link" href="{{url_for('experience')}}">Experience</a>
+          <a class="nav-link" href="{{url_for('projects')}}">Projects</a>
+          <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</nav>

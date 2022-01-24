@@ -1,0 +1,25 @@
+{% extends "index_base.html" %}{% block content %}
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <main class="px-3">
+      <h1>Chester Riley</h1>
+      <img
+        id="display-pic"
+        src="../static/IMG_20160704_013754_2.jpg"
+        alt="Display Picture"
+        width="300"
+        height="300"
+      />
+      <p class="lead">Full stack web developer</p>
+      <p class="lead">
+        <a
+          href="{{url_for('profile')}}"
+          class="btn btn-lg btn-secondary fw-bold border-white bg-dark"
+          >See Portfolio</a
+        >
+      </p>
+    </main>
+  </div>
+</body>
+{% endblock %}
