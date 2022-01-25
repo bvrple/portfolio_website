@@ -6,6 +6,6 @@ class Messages(db.Model):
     '''
     id = db.Column(db.Integer, primary_key=True, nullable=False) # User ID
     name = db.Column(db.VARCHAR(50))
-    email = db.Column(db.VARCHAR(50), nullable=False, unique=True)
-    phone = db.Column(db.Integer)
+    email = db.Column(db.VARCHAR(50), nullable=False)
+    phone = db.Column(db.VARCHAR(11))
     message = db.Column(db.VARCHAR(255))

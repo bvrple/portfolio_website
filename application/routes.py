@@ -1,7 +1,9 @@
 from flask import render_template, request, redirect, url_for
-from application import app
+from application import app, db
 from application.forms import ContactForm
 from application.models import Messages
+import pymysql
+
 
 @app.route('/')
 def index():
@@ -32,7 +34,7 @@ def contact():
         new_message = Messages(name=form.name.data,email=form.email.data, phone=form.phone.data, message=form.message.data)
         db.session.add(new_message)
         db.session.commit()
-        return redirect('/task_overview')
+        return redirect('/thank_you')
     return render_template('contact.html', form=form)
 
 @app.route('/thank_you')

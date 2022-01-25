@@ -8,6 +8,6 @@ class ContactForm(FlaskForm):
     '''
     name = StringField("Name", validators=[InputRequired(), Length(max=40)])
     email = StringField("Email", validators=[InputRequired(), Length(max=50)])
-    phone = IntegerField("Phone No.", validators=[Length(min=10, max=11, message="Please enter a valid phone number.")])
+    phone = StringField("Phone No.", validators=[Length(max=11, message="Please enter a valid phone number.")])
     message = StringField("Message", validators=[InputRequired(), Length(min=11)])
     submit = SubmitField("Send Message")
