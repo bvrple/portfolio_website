@@ -61,3 +61,22 @@
 .nav-link {
   color: white !important;
 }
+
+#submit {
+  color: white;
+}
+
+.container-contact.form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 8px;
+  font-weight: bold;
+  width: 52%;
+}

@@ -1,4 +1,22 @@
-{% extends "base.html" %}{% block content %}
+{% extends "base.html" %} {% import "bootstrap/wtf.html" as wtf %} {% block
+title %}{% endblock %} {% block content %}
 
-<h1>Contact Me</h1>
+<div class="header">
+  <h1>Contact Me</h1>
+</div>
+
+<div class="container-contact-form">
+  <form class="contact-form" action="{{ url_for('contact') }}" method="POST">
+    {{ form.hidden_tag() }} {{ form.name.label }} {{ form.name }} {{
+    form.email.label }} {{ form.email }} {{ form.phone.label }} {{ form.phone }}
+    {{ form.message.label }} {{ form.message }}
+    <button
+      class="btn btn-lg btn-secondary fw-bold border-white bg-dark form-submit"
+      role="button"
+    >
+      {{ wtf.form_field(form.submit) }}
+    </button>
+  </form>
+</div>
+
 {% endblock %}
