@@ -1,7 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* classes */
 
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+
 .bi {
-  margin-right: 0.3em;
+  margin-left: 0.15em;
+  margin-right: 0.15em;
+}
+
+.home-btn:hover {
+  color: #212529;
+  background-color: white !important;
+}
+
+.my-container {
+  height: 100%;
+  width: 100%;
+  /* margin: 0;
+  padding: 0; */
 }
 
 .container-contact.form {
@@ -50,12 +74,31 @@
   width: 35%;
 }
 
+.main {
+  height: 100%;
+}
+
+.navbar-brand:hover {
+  color: powderblue !important;
+}
+
 .navbar-collapse {
   justify-content: right;
 }
 
 .nav-link {
   color: white !important;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  color: #212529 !important;
+  background-color: white !important;
+  border-radius: 5px;
+}
+
+.navbar-logo {
+  padding-right: 4px;
 }
 
 .px-3 h1 {
@@ -69,8 +112,37 @@
 .socials {
   display: flex;
   flex-direction: row;
-  justify-content: right;
   padding-top: 4px;
+}
+
+.social-icons:hover {
+  color: powderblue !important;
+  /* font-size: 2.5rem !important;
+  padding: 6px; */
+}
+
+.tech-stack {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+  height: 100%;
+  /* margin-right: 10px; */
+}
+
+.tech-stack-icons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+
+.tech-stack-icons:hover {
+  color: goldenrod;
+  background-color: powderblue;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 /* ids */
@@ -83,12 +155,17 @@
   border-radius: 50%;
 }
 
-#navbar-logo {
-  padding-right: 4px;
+#display-pic:hover {
+  cursor: pointer;
 }
 
 #submit {
   color: white;
   font-size: 16pt;
   font-weight: 700 !important;
+}
+
+#synopsis {
+  margin: 3%;
+  font-size: 16pt;
 }

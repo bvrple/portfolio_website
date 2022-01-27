@@ -2,16 +2,17 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="{{url_for('index')}}">
         <img
-          id="navbar-logo"
           src="../static/CR_Logo_White-modified.png"
           alt=""
           width="40"
           height="34"
-          class="d-inline-block align-text-center"
+          class="navbar-logo d-inline-block align-text-center"
+          onmouseover="hover(this);"
+          onmouseout="unhover(this);"
         />
         Chester Riley
       </a>
-      <button
+      <!-- <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -20,7 +21,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span> -->
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -34,3 +35,4 @@
     </div>
   </nav>
 </nav>
+<script src="../static/logo.js"></script>

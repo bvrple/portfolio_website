@@ -9,3 +9,4 @@ class Messages(db.Model):
     email = db.Column(db.VARCHAR(50), nullable=False)
     phone = db.Column(db.VARCHAR(11))
     message = db.Column(db.VARCHAR(255))
+    # timestamp = (db.Date)

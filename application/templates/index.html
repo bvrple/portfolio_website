@@ -6,20 +6,23 @@
       <h1>Chester Riley</h1>
       <img
         id="display-pic"
-        src="../static/CR_Logo_Large-modified.png"
+        src="../static/CR_Logo_Black.png"
         alt="Display Picture"
         width="300"
         height="300"
+        onmouseover="indexHover(this);"
+        onmouseout="indexUnhover(this);"
       />
       <p class="lead">Full stack web developer</p>
       <p class="lead">
         <a
           href="{{url_for('profile')}}"
-          class="btn btn-lg btn-secondary fw-bold border-white bg-dark"
+          class="btn btn-lg btn-secondary fw-bold border-white bg-dark home-btn"
           >See Portfolio</a
         >
       </p>
     </main>
   </div>
+  <script src="../static/logo.js"></script>
 </body>
 {% endblock %}
