@@ -1,29 +1,24 @@
 {% extends "base.html" %}{% block content %}
 
-<h1>Profile</h1>
-
-<div class="about-me">
-  <table>
-    <tr>
-      <td>
-        <img
-          id="display-pic"
-          src="../static/images/IMG-20200405-WA0000_3.jpg"
-          alt="Display Picture"
-          width="300"
-          height="300"
-        />
-      </td>
-      <td>
-        <p id="synopsis">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          magni quisquam suscipit quis vero optio quos. Aperiam pariatur magni
-          molestias similique, dolorem, libero, rerum consequatur tenetur
-          impedit quisquam eligendi assumenda!
-        </p>
-      </td>
-    </tr>
-  </table>
+<div class="profile">
+  <div class="profile-pic">
+    <img
+      id="display-pic"
+      src="../static/images/IMG_20160704_013754_2.jpg"
+      alt="Display Picture"
+      width="350"
+      height="350"
+    />
+  </div>
+  <div class="profile-summary">
+    <i><h2 class="profile-page-header">About Me</h2></i>
+    <p class="synopsis">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni
+      quisquam suscipit quis vero optio quos. Aperiam pariatur magni molestias
+      similique, dolorem, libero, rerum consequatur tenetur impedit quisquam
+      eligendi assumenda!
+    </p>
+  </div>
 </div>
 
 {% endblock %}
