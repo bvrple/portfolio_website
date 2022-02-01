@@ -2,7 +2,6 @@ from flask import render_template, request, redirect, url_for
 from application import app, db
 from application.forms import ContactForm
 from application.models import Messages
-import pymysql
 
 
 @app.route('/')

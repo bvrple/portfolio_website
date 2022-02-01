@@ -1,4 +1,40 @@
 {% extends "base.html" %}{% block content %}
 
-<h1>Projects</h1>
+<div class="project-summary">
+  <i><h2 class="project-page-header">Projects</h2></i>
+  <div class="project-jumbotron">
+    <div class="project-container">
+      <h4>Task Manager</h4>
+      <img
+        class="project-pics"
+        src="../static/Tasks_Final.png"
+        alt="Seiri"
+        width="550"
+        height="220"
+      />
+      <a
+        href="https://github.com/bvrple/seiri_task_manager"
+        class="btn btn-lg btn-secondary fw-bold border-white bg-dark home-btn code-btn"
+        >View Code</a
+      >
+    </div>
+
+    <div class="project-container">
+      <h4>Song Generator</h4>
+      <img
+        class="project-pics"
+        src="../static/App.png"
+        alt="Song Generator"
+        width="550"
+        height="220"
+      />
+      <a
+        href="https://github.com/bvrple/qa-practical-project"
+        class="btn btn-lg btn-secondary fw-bold border-white bg-dark home-btn code-btn"
+        >View Code</a
+      >
+    </div>
+  </div>
+</div>
+
 {% endblock %}
