@@ -292,6 +292,11 @@
   cursor: pointer;
 }
 
+#message {
+  resize: none;
+  height: 100px;
+}
+
 #submit {
   color: white;
   font-size: 16pt;
